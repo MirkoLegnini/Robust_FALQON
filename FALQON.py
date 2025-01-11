@@ -73,7 +73,7 @@ class FALQON_independent_cce(FALQON):
         return 
     
     def _falqon_layer(self, beta_k):
-        error_gain=1+(np.random.rand()-0.5)*self.epsilon
+        error_gain=1+2*(np.random.rand()-0.5)*self.epsilon
         beta_k=beta_k*error_gain
         qml.ApproxTimeEvolution(self.cost_h, self.delta_t*error_gain, 1)
         qml.ApproxTimeEvolution(self.driver_h, self.delta_t * beta_k, 1) # 
@@ -172,7 +172,7 @@ class FALQON_accelerated_systematic_cce(FALQON_accelerated):
         return 
     
     def _falqon_layer(self, beta_k):
-        error_gain=1+(np.random.rand()-0.5)*self.epsilon
+        error_gain=1+2*(np.random.rand()-0.5)*self.epsilon
         beta_k=beta_k*error_gain
         qml.ApproxTimeEvolution(self.cost_h, self.delta_t*error_gain, 1)
         qml.ApproxTimeEvolution(self.driver_h, self.delta_t * beta_k, 1) # 

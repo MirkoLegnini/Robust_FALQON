@@ -65,7 +65,9 @@ def main():
     for ii in range(3):
         np.random.seed(ii)
         epsilon=0.1+0.4*ii
-        for _ in range(max_iters):
+        print(f"Experiments Systematic CCE epsilon={epsilon}$")
+        for kk in range(max_iters):
+            print(f"Iter {kk}")
             falqon_systematic_cce=FALQON_accelerated_systematic_cce(maxcut, max_depth, delta_t, dev_nominal, epsilon)
             _, energies_systematic_cce, _ =falqon_systematic_cce.falqon(beta_1, 1.0, 0)
             energies_systematic_cce=np.array(energies_systematic_cce)
