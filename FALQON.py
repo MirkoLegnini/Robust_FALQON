@@ -110,6 +110,7 @@ class FALQON_systematic_cce(FALQON):
             )
         return ansatz
     
+    
 class FALQON_accelerated():
     def __init__(self, problem: Problem, max_depth: int, delta_t: float, dev) -> None:
         self.dev=dev

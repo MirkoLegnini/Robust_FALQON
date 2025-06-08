@@ -1,14 +1,14 @@
 import pennylane as qml
 
-##############################
+##################################
 ## Marker interface
-##############################
+##################################
 class Problem():
     def __init__(self) -> None:
         pass
-################################
-#  Actual problem implementation
-################################    
+##################################
+#  Example problem implementation
+##################################    
 class MaxCut(Problem):
     def __init__(self, graph) -> None:
         self.cost_h, self.driver_h=qml.qaoa.cost.maxcut(graph)
