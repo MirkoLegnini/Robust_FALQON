@@ -40,5 +40,5 @@ This repository accompanies the paper **Robust Feedback Based Quantum Optimizati
 ## Usage
 Each of the simulation scripts can be run directly from the command line
 
-# Credits
+## Credits
 The implementation for FALQON is partially based on the Pennylane tutorial by David Wakeham and Jack Ceroni (https://pennylane.ai/qml/demos/tutorial_falqon). 
