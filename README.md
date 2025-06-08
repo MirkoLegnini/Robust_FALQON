@@ -10,8 +10,8 @@ This repository accompanies the paper **Robust Feedback Based Quantum Optimizati
 * Problem definitions and utility functions (problem.py).
 * Three simulation scripts to reproduce the experiments:
 
-  * `run_systematic.py`: Run comparision for different systematic CCE levels over a single run of FALQON.
-  * `run_average_independent.py`: Run comparision for different independent CCE levels over a single run of FALQON, plot the variance of the error on each layer.
+  * `run_systematic.py`: Run average comparision for different systematic CCE levels over a single run of FALQON.
+  * `run_average_independent.py`: Run average comparision for different independent CCE levels over a single run of FALQON, plot the variance of the error on each layer.
   * `compare_epsilon_independent.py`: Compare the error on the final layer for multiple values of epsilon.
   
 ## Installation
